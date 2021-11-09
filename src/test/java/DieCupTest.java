@@ -14,10 +14,9 @@ class DieCupTest {
         int dieFaces = 6;
         int tolerance = 100;
         double maxRolls = 10000;
-        double avgCount = Math.round(maxRolls/dieFaces);
 
         double[] expected = new double[dieFaces];
-        Arrays.fill(expected, avgCount);
+        Arrays.fill(expected, maxRolls/dieFaces);
 
         double[] actual = new double[dieFaces];
 
