@@ -20,9 +20,9 @@ class DieCupTest {
 
         double[] actual = new double[dieFaces];
 
-        int testRolls = 0;
+        int rolls = 0;
 
-        while( testRolls <= maxRolls ) {
+        while( rolls <= maxRolls ) {
 
             int roll = DieCup.Roll();
 
@@ -34,7 +34,7 @@ class DieCupTest {
 
             }
 
-            testRolls++;
+            rolls++;
         }
 
         assertArrayEquals(expected, actual, tolerance);
