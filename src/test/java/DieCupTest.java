@@ -1,4 +1,3 @@
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -11,22 +10,22 @@ class DieCupTest {
     @Test
      public void tiTusindKast(){
 
-        int dieFaces = 6;
-        int tolerance = 100;
-        double maxRolls = 10000;
+        final int DIE_FACES = 6;
+        final int TOLERANCE = 100;
+        final float MAX_ROLLS = 10000;
 
-        double[] expected = new double[dieFaces];
-        Arrays.fill(expected, maxRolls/dieFaces);
+        float[] expected = new float[DIE_FACES];
+        Arrays.fill(expected, MAX_ROLLS/DIE_FACES);
 
-        double[] actual = new double[dieFaces];
+        float[] actual = new float[DIE_FACES];
 
         int rolls = 0;
 
-        while( rolls <= maxRolls ) {
+        while( rolls <= MAX_ROLLS ) {
 
             int roll = DieCup.Roll();
 
-            for (int i = 0; i < dieFaces; i++){
+            for (int i = 0; i < DIE_FACES; i++){
 
                 if(roll == i + 1){
                     actual[i]++;
@@ -37,7 +36,7 @@ class DieCupTest {
             rolls++;
         }
 
-        assertArrayEquals(expected, actual, tolerance);
+        assertArrayEquals(expected, actual, TOLERANCE);
      }
 
 
