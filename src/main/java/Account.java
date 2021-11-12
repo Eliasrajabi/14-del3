@@ -1,6 +1,7 @@
 public class Account {
     int moneyTotal;
 
+    //Denne metode bruges til at købe en bod.
     public boolean isBoothBought(int money){
         int CheckBalance = moneyTotal + money;
 
@@ -12,7 +13,8 @@ public class Account {
             return true;
         }
     }
-    public int payFine(int money){
+    //Denne metode bruges til alle andre transaktioner.
+    public int adjustMoney(int money){
         int CheckBalance = moneyTotal + money;
 
         if(CheckBalance<0){
@@ -23,4 +25,5 @@ public class Account {
         }
         return moneyTotal;
     }
+
 }
