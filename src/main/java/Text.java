@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Text {
 
-    public static String Descriptions(int squareNr) throws IOException {
+    public static String Descriptions(int squareNum) throws IOException {
 
         File fil = new File("C:\\Users\\Malte\\IdeaProjects\\CDIO-3\\TestAfTekst");
 
@@ -14,14 +14,14 @@ public class Text {
         while(scan.hasNextLine()){
             scan.nextLine();
 
-            if(scan.hasNext(Integer.toString(squareNr))){
+            if(scan.hasNext(Integer.toString(squareNum))){
                 scan.nextLine();
 
                 while(scan.hasNextLine()){
 
                     squareDesc = String.format("%s%s\n", squareDesc, scan.nextLine());
 
-                    if(scan.hasNext(Integer.toString(squareNr+1))){
+                    if(scan.hasNext(Integer.toString(squareNum+1))){
                         break;
                     }
                 }
