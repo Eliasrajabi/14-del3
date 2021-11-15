@@ -28,13 +28,13 @@ public class Text {
         return squareDesc;
     }
 
-    public static String landOnGo() throws IOException {
+    public static String getGoText() throws IOException {
         return Descriptions("GO:");
     }
-    public static String landOnAmusement() throws IOException {
+    public static String getAmusementText() throws IOException {
         return Descriptions("Amusement:");
     }
-    public static String landOnChance() throws IOException {
+    public static String getChanceText() throws IOException {
        return Descriptions("Chance:");
     }
 
