@@ -3,46 +3,40 @@ import java.util.Scanner;
 
 public class Text {
 
-   private static String Descriptions(int squareNum) throws IOException {
+   private static String Descriptions(String squareName) throws IOException {
 
         File fil = new File("Descriptions");
 
         Scanner scan = new Scanner(new FileReader(fil.toString()));
 
-        String squareDesc = "";
-
-        String squareNumString = Integer.toString(squareNum);
+       String squareDesc = "";
 
         while(scan.hasNextLine()){
-            scan.nextLine();
 
-            if(scan.hasNext(squareNumString)){
-                scan.nextLine();
 
-                while(scan.hasNextLine()){
+            if(scan.hasNext(squareName)){
+
+                while(!scan.hasNext("---")){
                     squareDesc = String.format("%s%s\n", squareDesc, scan.nextLine());
-
-                    if(scan.hasNext(Integer.toString(squareNum+1))){
-                        break;
-                    }
                 }
 
                 break;
             }
-
+            scan.nextLine();
         }
 
         return squareDesc;
     }
 
     public static String landOnGo() throws IOException {
-        return Descriptions(1);
+        return Descriptions("GO:");
     }
     public static String landOnAmusement() throws IOException {
-        return Descriptions(2);
+        return Descriptions("Amusement:");
     }
     public static String landOnChance() throws IOException {
-        return Descriptions(3);
+       return Descriptions("Chance:");
     }
+
 
 }
