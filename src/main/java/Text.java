@@ -3,18 +3,20 @@ import java.util.Scanner;
 
 public class Text {
 
-    public static String Descriptions(int squareNum) throws IOException {
+   private static String Descriptions(int squareNum) throws IOException {
 
-        File fil = new File("C:\\Users\\Malte\\IdeaProjects\\CDIO-3\\TestAfTekst");
+        File fil = new File("Descriptions");
 
         Scanner scan = new Scanner(new FileReader(fil.toString()));
 
         String squareDesc = "";
 
+        String squareNumString = Integer.toString(squareNum);
+
         while(scan.hasNextLine()){
             scan.nextLine();
 
-            if(scan.hasNext(Integer.toString(squareNum))){
+            if(scan.hasNext(squareNumString)){
                 scan.nextLine();
 
                 while(scan.hasNextLine()){
@@ -34,5 +36,14 @@ public class Text {
         return squareDesc;
     }
 
+    public static String landOnGo() throws IOException {
+        return Descriptions(1);
+    }
+    public static String landOnAmusement() throws IOException {
+        return Descriptions(2);
+    }
+    public static String landOnChance() throws IOException {
+        return Descriptions(3);
+    }
 
 }
