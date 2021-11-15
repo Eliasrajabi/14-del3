@@ -20,7 +20,6 @@ public class Text {
                 scan.nextLine();
 
                 while(scan.hasNextLine()){
-
                     squareDesc = String.format("%s%s\n", squareDesc, scan.nextLine());
 
                     if(scan.hasNext(Integer.toString(squareNum+1))){
