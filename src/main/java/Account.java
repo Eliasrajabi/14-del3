@@ -34,12 +34,4 @@ public class Account {
     }
 
 
-    public void setMoneyTotal(int income){
-        this.moneyTotal = income;
-    }
-
-    public int getMoneyTotal(){
-        return this.moneyTotal;
-    }
-
 }

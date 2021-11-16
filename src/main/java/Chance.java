@@ -23,7 +23,7 @@ public class Chance extends Square{
                     "If the square is already owned, then you have to pay entrance to the owner." +
                     "If not, you get the booth for free!");
                     //skal være felt som spiller selv vælger
-                    GameBoard.getSquare(3).landOn(player);
+                    gameBoard.getSquare(3).landOn(player);
                 break;
             //Choose an amusement square.
             case 4:
