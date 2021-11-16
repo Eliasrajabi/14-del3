@@ -9,12 +9,12 @@
             account.adjustBalance(startBalance);
         }
 
-        public Player() {
-
-        }
-
         public void setPosition(int position) {
             this.position = position;
+        }
+
+        public int getPosition(){
+            return this.position;
         }
 
         public void adjustBalance(int money) {
