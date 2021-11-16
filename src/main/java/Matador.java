@@ -9,12 +9,14 @@ public class Matador {
         GUI gui = new GUI();
         turn(new Player());
 
-        Player player = new Player();
+        /*
+        //Player player = new Player();
         Player player2 = new Player();
 
         Player players[] = new Player[3];
         for (Player player : players) {
             turn(player);
+        }*/
     }
 
     public static void turn(Player player) {
