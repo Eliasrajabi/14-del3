@@ -1,11 +1,26 @@
 public class DieCup {
-    public static int roll(){
-        Die die1 = new Die();
+    Die[] dice;
 
-        int faceValue;
+    public DieCup(int numDice)
+    {
+        this.dice = new Die[numDice];
+        for(int i = 0; i<numDice; i++)
+            dice[i] = new Die();
+    }
 
-        faceValue = die1.eyes;
+    public int[] rollDice(){
+        int[] results = new int[this.dice.length];
+        for(int i = 0; i<this.dice.length; i++)
+            results[i] = dice[i].roll();
 
-        return faceValue;
+        return results;
+    }
+    public int getSum(){
+        int result = 0;
+        for(int i = 0; i<this.dice.length; i++){
+            result += dice[i].getEyes();
+        }
+
+        return result;
     }
 }
