@@ -1,10 +1,10 @@
+
+import gui_main.GUI;
 import gui_fields.GUI_Field;
 
 public class Matador {
     public static void main(String[] args) {
         GUI gui = new GUI();
-        GUI_Field[] fields = new GUI_Field[10];
-        Square[] squares = GameBoard.makeSquares();
 
         /*
         //Player player = new Player();
