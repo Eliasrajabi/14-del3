@@ -1,16 +1,25 @@
 public class GameBoard {
-    private static final Square[] gameBoardList = new Square[11];
+    //singleton
+    private static GameBoard instance;
 
-    public static int length (){
+    public static GameBoard getInstance(){
+        if(instance == null){
+            instance = new GameBoard();
+        }
+        return instance;
+    }
+    private final Square[] gameBoardList = new Square[11];
+
+    public int length (){
         return gameBoardList.length;
     }
 
-    public static Square getSquare(int position){
+    public Square getSquare(int position){
         return gameBoardList[position];
     }
 
     //et array som indeholder alle felter
-    public static Square[] makeSquares() {
+    public Square[] makeSquares() {
 
         //Indtil videre er der ikke noget indhold i de specifikke felter, men når det bliver lavet,
         //skriver vi dem ind i parameterne her for at instantiere dem.
