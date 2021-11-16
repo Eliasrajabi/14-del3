@@ -1,5 +1,5 @@
 public class Account {
-    int moneyTotal;
+    private int moneyTotal;
 
     //Denne metode bruges til at købe en bod.
     public boolean isBoothBought(int money){
@@ -14,7 +14,7 @@ public class Account {
         }
     }
     //Denne metode bruges til alle andre transaktioner.
-    public int adjustMoney(int money){
+    public int adjustBalance(int money){
         int CheckBalance = moneyTotal + money;
 
         if(CheckBalance<0){
@@ -25,5 +25,13 @@ public class Account {
         }
         return moneyTotal;
     }
+    public void setMoneyTotal(int money){
+        this.moneyTotal = money;
+    }
+
+    public int getMoneyTotal(){
+        return this.moneyTotal;
+    }
+
 
 }

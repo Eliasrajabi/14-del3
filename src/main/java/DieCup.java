@@ -1,9 +1,8 @@
 public class DieCup {
     public static int roll(){
+        Die die1 = new Die();
 
         int faceValue;
-
-        Die die1 = new Die();
 
         faceValue = die1.eyes;
 
