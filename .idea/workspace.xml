@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="078686c6-28dd-4902-b1d3-4b16c9b7efae" name="Changes" comment="små ændringer">
+      <change afterPath="$PROJECT_DIR$/CDIO-3.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Descriptions" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="20e5JyRdq2QiqTqhKgY3bYEEs33" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.18717277" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Malte\IdeaProjects\CDIO-3" />
+      <recent name="C:\Users\Malte\IdeaProjects\CDIO-3\src\main\java" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="CDIO-3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DieCupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CDIO-3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DieCupTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DieCupTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.DieCupTest" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="078686c6-28dd-4902-b1d3-4b16c9b7efae" name="Changes" comment="" />
+      <created>1636392145997</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636392145997</updated>
+      <workItem from="1636392148494" duration="15772000" />
+      <workItem from="1636457927663" duration="6024000" />
+      <workItem from="1636475231514" duration="192000" />
+      <workItem from="1636475551953" duration="144000" />
+      <workItem from="1636492664324" duration="8000" />
+      <workItem from="1636645172015" duration="3849000" />
+      <workItem from="1636727163281" duration="8360000" />
+      <workItem from="1636743669492" duration="141000" />
+      <workItem from="1636748830318" duration="782000" />
+      <workItem from="1636904565651" duration="640000" />
+      <workItem from="1636914623370" duration="1872000" />
+      <workItem from="1636992554600" duration="3848000" />
+      <workItem from="1637015595577" duration="1322000" />
+      <workItem from="1637069399276" duration="1347000" />
+      <workItem from="1637154315538" duration="891000" />
+    </task>
+    <task id="LOCAL-00001" summary="Tilføjede src\main\java">
+      <created>1636393182131</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636393182131</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Oprettelse af Main">
+      <created>1636394295918</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636394295918</updated>
+    </task>
+    <task id="LOCAL-00003" summary="DieCupTest (ikke helt færdig)">
+      <created>1636424909411</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636424909411</updated>
+    </task>
+    <task id="LOCAL-00004" summary="DieCupTest">
+      <created>1636474872027</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1636474872027</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Små ændringer">
+      <created>1636475420395</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1636475420395</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Små ændringer">
+      <created>1636475583323</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1636475583323</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Små ændringer">
+      <created>1636645808578</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1636645808578</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Læsning af tekstfil">
+      <created>1636654883420</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1636654883420</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Læsning af tekstfil">
+      <created>1636743566424</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1636743566424</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Læsning af tekstfil">
+      <created>1636748895642</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1636748895642</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Læsning af tekstfil">
+      <created>1636992669555</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1636992669555</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Læsning af tekstfil">
+      <created>1636992773330</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1636992773330</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Text-klasse ind i origin/main">
+      <created>1636994645000</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1636994645000</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Text-klasse ind i origin/main">
+      <created>1636997202649</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1636997202649</updated>
+    </task>
+    <task id="LOCAL-00015" summary="små ændringer">
+      <created>1637016593370</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1637016593370</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/Descriptions" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Tilføjede src\main\java" />
+    <MESSAGE value="Oprettelse af Main" />
+    <MESSAGE value="DieCupTest (ikke helt færdig)" />
+    <MESSAGE value="DieCupTest" />
+    <MESSAGE value="Små ændringer" />
+    <MESSAGE value="Læsning af tekstfil" />
+    <MESSAGE value="Text-klasse ind i origin/main" />
+    <MESSAGE value="små ændringer" />
+    <option name="LAST_COMMIT_MESSAGE" value="små ændringer" />
+  </component>
+</project>

@@ -1,0 +1,44 @@
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\r\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n\r\n    <groupId>groupId</groupId>\r\n    <artifactId>CDIO-3</artifactId>\r\n    <version>1.0-SNAPSHOT</version>\r\n    <build>\r\n        <plugins>\r\n            <plugin>\r\n                <groupId>org.apache.maven.plugins</groupId>\r\n                <artifactId>maven-compiler-plugin</artifactId>\r\n                <configuration>\r\n                    <source>14</source>\r\n                    <target>14</target>\r\n                </configuration>\r\n            </plugin>\r\n        </plugins>\r\n    </build>\r\n\r\n    <repositories>\r\n        <repository>\r\n            <id>Matador_GUI-repository</id>\r\n            <url>https://github.com/diplomit-dtu/Matador_GUI/raw/repository</url>\r\n            <snapshots>\r\n                <enabled>true</enabled>\r\n                <updatePolicy>always</updatePolicy>\r\n            </snapshots>\r\n        </repository>\r\n    </repositories>\r\n\r\n    <dependencies>\r\n        <dependency>\r\n            <groupId>diplomitdtu</groupId>\r\n            <artifactId>matadorgui</artifactId>\r\n            <version>3.1.7</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.junit.jupiter</groupId>\r\n            <artifactId>junit-jupiter</artifactId>\r\n            <version>RELEASE</version>\r\n            <scope>test</scope>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.junit.jupiter</groupId>\r\n            <artifactId>junit-jupiter</artifactId>\r\n            <version>RELEASE</version>\r\n            <scope>test</scope>\r\n        </dependency>\r\n    </dependencies>\r\n    <properties>\r\n        <maven.compiler.source>11</maven.compiler.source>\r\n        <maven.compiler.target>11</maven.compiler.target>\r\n    </properties>\r\n\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	
++++ b/pom.xml	
+@@ -49,6 +49,18 @@
+             <version>RELEASE</version>
+             <scope>test</scope>
+         </dependency>
++        <dependency>
++            <groupId>junit</groupId>
++            <artifactId>junit</artifactId>
++            <version>3.8.2</version>
++            <scope>test</scope>
++        </dependency>
++        <dependency>
++            <groupId>org.testng</groupId>
++            <artifactId>testng</artifactId>
++            <version>RELEASE</version>
++            <scope>test</scope>
++        </dependency>
+     </dependencies>
+     <properties>
+         <maven.compiler.source>11</maven.compiler.source>
+Index: src/test/java/AccountTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import junit.framework.TestCase;\r\nimport org.junit.Test;\r\nimport org.junit.jupiter.api.AfterEach;\r\nimport org.junit.jupiter.api.BeforeEach;\r\n\r\npublic class AccountTest extends TestCase {\r\n    private Player spiller;\r\n    @BeforeEach\r\n    protected void setUp() {\r\n        spiller = new Player();\r\n        spiller.account.adjustMoney(50);\r\n    }\r\n\r\n    @AfterEach\r\n    protected void tearDown(){\r\n        spiller.account.moneyTotal = 0;\r\n    }\r\n\r\n    @Test\r\n    void addPoint(){\r\n        assertEquals(spiller.getAccount().adjustMoney(50),spiller.account.moneyTotal == 100);\r\n    }\r\n\r\n\r\n    @Test\r\n    void subtractionPoint() {\r\n        boolean isMoneyAdjusted = spiller.getAccount().isBoothBought(-100);\r\n        assertFalse(isMoneyAdjusted);\r\n        int totalMoney = spiller.getAccount().moneyTotal;\r\n        assertEquals(totalMoney,50);\r\n    }\r\n}
+===================================================================
+diff --git a/src/test/java/AccountTest.java b/src/test/java/AccountTest.java
+--- a/src/test/java/AccountTest.java	
++++ b/src/test/java/AccountTest.java	
+@@ -1,5 +1,5 @@
+ import junit.framework.TestCase;
+-import org.junit.Test;
++import org.testng.annotations.Test;
+ import org.junit.jupiter.api.AfterEach;
+ import org.junit.jupiter.api.BeforeEach;
+ 
