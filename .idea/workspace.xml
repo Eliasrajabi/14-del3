@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="078686c6-28dd-4902-b1d3-4b16c9b7efae" name="Changes" comment="Små ændringer" />
+    <list default="true" id="078686c6-28dd-4902-b1d3-4b16c9b7efae" name="Changes" comment="små ændringer">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Descriptions" />
+        <entry key="$PROJECT_DIR$" value="GUIController" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,7 +52,6 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.18717277" />
@@ -82,13 +85,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="CDIO-3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="CDIO-3" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DieCupTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DieCupTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.DieCupTest" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +237,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637016593370</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="GUI">
+      <created>1637170488694</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1637170488694</updated>
+    </task>
+    <task id="LOCAL-00017" summary="små ændringer">
+      <created>1637171205556</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1637171205556</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +305,7 @@
     <MESSAGE value="Små ændringer" />
     <MESSAGE value="Læsning af tekstfil" />
     <MESSAGE value="Text-klasse ind i origin/main" />
+    <MESSAGE value="GUI" />
     <MESSAGE value="små ændringer" />
     <option name="LAST_COMMIT_MESSAGE" value="små ændringer" />
   </component>
