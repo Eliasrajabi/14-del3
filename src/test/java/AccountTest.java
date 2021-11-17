@@ -6,13 +6,13 @@ import org.junit.jupiter.api.BeforeEach;
 public class AccountTest extends TestCase {
     private Player spiller;
     @BeforeEach
-    void setUp() {
+    protected void setUp() {
         spiller = new Player();
         spiller.account.adjustMoney(50);
     }
 
     @AfterEach
-    void tearDown(){
+    protected void tearDown(){
         spiller.account.moneyTotal = 0;
     }
 
@@ -24,7 +24,7 @@ public class AccountTest extends TestCase {
 
     @Test
     void subtractionPoint() {
-        boolean isMoneyAdjusted = spiller.getAccount().adjustMoney(-100);
+        boolean isMoneyAdjusted = spiller.getAccount().isBoothBought(-100);
         assertFalse(isMoneyAdjusted);
         int totalMoney = spiller.getAccount().moneyTotal;
         assertEquals(totalMoney,50);

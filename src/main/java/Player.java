@@ -6,15 +6,15 @@
 
         public void setStartBalance(int startBalance) {
             this.startBalance = startBalance;
-            account.isBoothBought(startBalance);
-        }
-
-        public Player() {
-
+            account.adjustBalance(startBalance);
         }
 
         public void setPosition(int position) {
             this.position = position;
+        }
+
+        public int getPosition(){
+            return this.position;
         }
 
         public void adjustBalance(int money) {
