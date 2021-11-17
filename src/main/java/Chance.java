@@ -2,7 +2,6 @@ public class Chance extends Square{
 
     @Override
     void landOn(Player player) {
-
         GameBoard gameBoard = GameBoard.getInstance();
         System.out.println("Du landte på chance");
         int cardNumber = (int) (Math.random() * 4 + 1);
@@ -23,7 +22,7 @@ public class Chance extends Square{
                     "If the square is already owned, then you have to pay entrance to the owner." +
                     "If not, you get the booth for free!");
                     //skal være felt som spiller selv vælger
-                    gameBoard.getSquare(3).landOn(player);
+
                 break;
             //Choose an amusement square.
             case 4:

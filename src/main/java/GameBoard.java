@@ -1,5 +1,6 @@
 public class GameBoard {
     //singleton
+    //Gør så man har et enkelt instans af Gameboard klasse
     private static GameBoard instance;
 
     public static GameBoard getInstance(){
@@ -17,7 +18,7 @@ public class GameBoard {
     public Square getSquare(int position){
         return gameBoardList[position];
     }
-
+    public Square setSquare(int number){return gameBoardList[number];}
     //et array som indeholder alle felter
     public Square[] makeSquares() {
 
