@@ -7,7 +7,23 @@ Amusement:
 ANDET
 FELT
 ---
-Chance:
-TREDJE
-FELT
+Chance1:
+Move to an orange or green square.
+If the square is already owned,
+then you have to pay entrance to the owner.
+If not, you get the booth for free!
+---
+Chance2:
+You ate too much candy. :(
+Pay 2$ to the bank.
+---
+Chance3:
+Move to a pink or gray square.
+If the square is already owned,
+then you have to pay entrance to the owner.
+If not, you get the booth for free!
+---
+Chance4:
+It's your birthday!
+You get 2$ from the bank :)
 ---

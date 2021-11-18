@@ -1,29 +1,30 @@
+import java.io.IOException;
+
 public class Chance extends Square{
 
     @Override
-    void landOn(Player player) {
+    void landOn(Player player) throws IOException {
         System.out.println("Du landte på chance");
         int cardNumber = (int) (Math.random() * 4 + 1);
 
+
         switch (cardNumber) {
-            case 1: System.out.println("Move to an orange or green square." +
-                    "If the square is already owned, then you have to pay entrance to the owner." +
-                    "If not, you get the booth for free!");
-                break;
+            case 1 ->
+                System.out.println(Text.getChanceDesc(cardNumber));
             //Her skal være noget kode som rykker spilleren
-            case 2:
-                System.out.println("You ate too much candy :( \nPay 2$ to the bank.");
+            case 2 -> {
+                System.out.println(Text.getChanceDesc(cardNumber));
                 player.adjustBalance(-2);
-                break;
-            case 3: System.out.println("Move to a pink or gray square." +
-                    "If the square is already owned, then you have to pay entrance to the owner." +
-                    "If not, you get the booth for free!");
-                break;
+            }
+            case 3 -> {
+                System.out.println();
+                System.out.println(Text.getChanceDesc(cardNumber));
+            }
             //Choose an amusement square.
-            case 4:
-                System.out.println("It's your birthday! \nYou get 2$ from the bank :) ");
+            case 4 -> {
+                System.out.println(Text.getChanceDesc(cardNumber));
                 player.adjustBalance(2);
-                break;
+            }
         }
 
         //Mine forsøg på at lave en array som ikke fungerede :(
@@ -36,10 +37,6 @@ public class Chance extends Square{
         //int cardNumber = (int) (Math.random() * 6 + 1);
         //Chance chance = card[cardNumber];
         //System.out.println("dit kort" + card[cardNumber]);
-    }
 
-    @Override
-    public String toString() {
-        return "Chance";
     }
 }

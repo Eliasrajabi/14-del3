@@ -17,6 +17,7 @@ public class Text {
 
 
             if(scan.hasNext(squareName)){
+                scan.nextLine();
 
                 while(!scan.hasNext("---")){
                     squareDesc = String.format("%s%s\n", squareDesc, scan.nextLine());
@@ -36,8 +37,18 @@ public class Text {
     public static String getAmusementDesc() throws IOException {
        return Descriptions("Amusement:");
     }
-    public static String getChanceDesc() throws IOException {
-       return Descriptions("Chance:");
+    public static String getChanceDesc(int chanceNr) throws IOException {
+
+         String chance = "";
+
+        switch (chanceNr) {
+            case 1 -> chance = Descriptions("Chance1:");
+            case 2 -> chance = Descriptions("Chance2:");
+            case 3 -> chance = Descriptions("Chance3:");
+            case 4 -> chance = Descriptions("Chance4:");
+        }
+
+        return chance;
     }
 
 
