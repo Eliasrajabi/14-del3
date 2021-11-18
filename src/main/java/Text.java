@@ -1,9 +1,11 @@
-import java.io.*;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Text {
 
-   private static String Descriptions(String squareName) throws IOException {
+     private static String Descriptions(String squareName) throws IOException {
 
         File fil = new File("Descriptions");
 
@@ -28,13 +30,13 @@ public class Text {
         return squareDesc;
     }
 
-    public static String getGoText() throws IOException {
+    public static String getGoDesc() throws IOException {
         return Descriptions("GO:");
     }
-    public static String getAmusementText() throws IOException {
-        return Descriptions("Amusement:");
+    public static String getAmusementDesc() throws IOException {
+       return Descriptions("Amusement:");
     }
-    public static String getChanceText() throws IOException {
+    public static String getChanceDesc() throws IOException {
        return Descriptions("Chance:");
     }
 
