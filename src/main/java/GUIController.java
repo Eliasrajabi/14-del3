@@ -1,8 +1,10 @@
+import gui_fields.GUI_Car;
 import gui_fields.GUI_Field;
 import gui_fields.GUI_Street;
 import gui_main.GUI;
 import gui_fields.GUI_Board;
-import gui_fields.GUI_Field;
+
+import java.util.Objects;
 
 public class GUIController {
     GUIController gui = new GUIController();
@@ -23,21 +25,22 @@ public class GUIController {
         squares[9] = new GUI_Street();
         squares[10] = new GUI_Street();
         squares[11] = new GUI_Street();
+    }
 
-        String choseAmusement = gui.getUserButtonPressed(
+      /*  String choseAmusement = gui.getUserButtonPressed(
                 "Chose an Amusement",
                 "Button 1", "Button 2","Button 3","Button 4"
         );
-        if(choseAmusement == "Button 1"){
+        if(Objects.equals(choseAmusement, "Button 1")){
             gameBoard.getSquare(3).landOn(player);}
-        if(choseAmusement == "Button 2"){
+        if(Objects.equals(choseAmusement, "Button 2")){
             gameBoard.getSquare(4).landOn(player);}
-        if(choseAmusement == "Button 3"){
+        if(Objects.equals(choseAmusement, "Button 3")){
             gameBoard.getSquare(5).landOn(player);}
-        if(choseAmusement == "Button 4"){
+        if(Objects.equals(choseAmusement, "Button 4")){
             gameBoard.getSquare(6).landOn(player);}
-    }
+
     public String getUserButtonPressed(String click_a_button, String s, String s1, String s3, String s4) {
         return null;
-    }
+    } */
 }

@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="078686c6-28dd-4902-b1d3-4b16c9b7efae" name="Changes" comment="Små rettelser" />
+    <list default="true" id="078686c6-28dd-4902-b1d3-4b16c9b7efae" name="Changes" comment="små ændringer">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Chance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Chance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Die.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Die.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DieCup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DieCup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GUIController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GameBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Matador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Matador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MatadorGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MatadorGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Text.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Text.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/AccountTest.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,8 +114,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DieCupTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.DieCupTest" />
         <item itemvalue="JUnit.DieCupTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DieCupTest" />
@@ -247,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637171205556</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="små ændringer">
+      <created>1637327314920</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1637327314921</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

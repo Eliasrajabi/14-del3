@@ -3,6 +3,7 @@ import org.junit.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
+
 public class AccountTest extends TestCase {
     private Player spiller;
     @BeforeEach
@@ -10,7 +11,6 @@ public class AccountTest extends TestCase {
         spiller = new Player();
         spiller.account.adjustMoney(50);
     }
-
     @AfterEach
     protected void tearDown(){
         spiller.account.moneyTotal = 0;
@@ -20,7 +20,6 @@ public class AccountTest extends TestCase {
     void addPoint(){
         assertEquals(spiller.getAccount().adjustMoney(50),spiller.account.moneyTotal == 100);
     }
-
 
     @Test
     void subtractionPoint() {
