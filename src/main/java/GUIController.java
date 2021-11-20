@@ -7,7 +7,6 @@ import gui_fields.GUI_Board;
 import java.util.Objects;
 
 public class GUIController {
-    GUIController gui = new GUIController();
     GUI_Field[] squares = new GUI_Field[11];
     GUI board;
     GameBoard gameBoard = new GameBoard();

@@ -5,23 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="078686c6-28dd-4902-b1d3-4b16c9b7efae" name="Changes" comment="små ændringer">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15-11-2021_23_39__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15-11-2021_23_39__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15-11-2021_23_39__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15-11-2021_23_39__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_15-11-2021_17_15__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_15-11-2021_17_15__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_15-11-2021_17_42__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_15-11-2021_17_42__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15-11-2021_17_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15-11-2021_17_09__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MatadorGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MatadorGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Chance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Chance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Die.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Die.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DieCup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DieCup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GUIController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GUIController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GameBoard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Matador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Matador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MatadorGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MatadorGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Text.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Text.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/AccountTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +86,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Matador" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Matador" />
+      <module name="CDIO-3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DieCupTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CDIO-3" />
       <option name="PACKAGE_NAME" value="" />
@@ -115,10 +118,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Matador" />
         <item itemvalue="JUnit.DieCupTest" />
         <item itemvalue="JUnit.DieCupTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.DieCupTest" />
       </list>
     </recent_temporary>
   </component>
@@ -145,6 +148,8 @@
       <workItem from="1637015595577" duration="1322000" />
       <workItem from="1637069399276" duration="1347000" />
       <workItem from="1637154315538" duration="891000" />
+      <workItem from="1637425786317" duration="58000" />
+      <workItem from="1637442796953" duration="1909000" />
     </task>
     <task id="LOCAL-00001" summary="Tilføjede src\main\java">
       <created>1636393182131</created>

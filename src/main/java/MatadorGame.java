@@ -1,6 +1,6 @@
 public class MatadorGame {
     DieCup dieCup = new DieCup(1);
-    Player players[] = new Player[]{new Player(), new Player(), new Player()};
+    Player[] players = new Player[]{new Player(), new Player(), new Player()};
     GameBoard gameBoard = new GameBoard();
 
     public void start(){
@@ -19,4 +19,6 @@ public class MatadorGame {
         player.setPosition((player.getPosition() + roll) % gameBoard.length());
         gameBoard.getSquare(player.getPosition()).landOn(player);
     }
+
+
 }
