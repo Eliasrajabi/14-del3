@@ -8,7 +8,7 @@ class DieCupTest {
 
 
     @Test
-     public void tiTusindKast(){
+     public void rollThousand(){
 
         final int DIE_FACES = 6;
         final int TOLERANCE = 100;
