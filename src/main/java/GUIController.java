@@ -23,7 +23,6 @@ public class GUIController {
         squares[8] = new GUI_Street();
         squares[9] = new GUI_Street();
         squares[10] = new GUI_Street();
-        squares[11] = new GUI_Street();
     }
 
       /*  String choseAmusement = gui.getUserButtonPressed(
