@@ -25,14 +25,10 @@ public class Main {
                     "Name for player " + (i+1) + ": ");
             players[i] =  new GUI_Player(name);
             playerNames[i] = players[i].getName();
-
         }
 
 
-
         gui.showMessage(Arrays.toString(playerNames));
-
-
 
     }
 
