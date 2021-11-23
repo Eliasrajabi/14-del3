@@ -8,12 +8,11 @@ public class DieCup {
             dice[i] = new Die();
     }
 
-    public int[] rollDice(){
+    public void rollDice(){
         int[] results = new int[this.dice.length];
         for(int i = 0; i<this.dice.length; i++)
             results[i] = dice[i].roll();
 
-        return results;
     }
     public int getSum(){
         int result = 0;

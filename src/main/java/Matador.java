@@ -1,46 +1,76 @@
+import gui_main.GUI;
+
+import java.io.IOException;
+
 public class Matador {
     private final DieCup dieCup = new DieCup(1);
     private final GameBoard gameBoard = new GameBoard();
-    private Player[] players;
     private Player currentPlayer;
+    int playerNum = 0;
+
 
     private final int START_MONEY = 40;
     private final int BOARD_SIZE = gameBoard.length();
-    private boolean hasWinner = false;
+    private final boolean hasWinner = false;
 
-    public MatadorGame(int amount_of_player){
-        for (int i= 0; i < amount_of_player; i++) {
-            players[i] = new Player();
+    Player[] players = new Player[playerNum];
+    String[] playerNames = new String[playerNum];
+
+    GUI gui = new GUI();
+
+    final String choice = gui.getUserButtonPressed(
+            "Number of players", "1","2","3","4");
+
+        if(choice.equals("1")){playerNum = 1;}
+        if(choice.equals("2")){playerNum = 2;}
+        if(choice.equals("3")){playerNum = 3;}
+        if(choice.equals("4")){playerNum = 4;}
+
+
+    public void MatadorGame(){
+        for(int i = 0; i < playerNum; i++){
+
+            players[i] =  new Player();
+            String name = gui.getUserString(
+                    "Name for player " + (i+1) + ": ");
+            players[i].setPlayerName(name);
+            playerNames[i] = players[i].getPlayerName();
+
             players[i].setStartBalance(START_MONEY);
         }
-        currentPlayer = players[0];
+
+
     }
 
-    public void play(){
+    public void play() throws IOException {
+        int i = 0;
+
         do {
+            currentPlayer = players[i];
             turn(currentPlayer);
-            changePlayer();
+            changePlayer(i);
+            i++;
         }while (!hasWinner);
     }
 
-    private void turn(Player player) {
+    private void turn(Player player) throws IOException {
         dieCup.rollDice();
         updatePosition(dieCup.getSum());
 
 
-        for (int i = player.getPosition(); i < player.getPosition() + roll; i++)
+        for (int i = player.getPosition(); i < player.getPosition() + dieCup.getSum(); i++)
         {
             gameBoard.getSquare(i % gameBoard.length()).passBy(player);
         }
-        player.setPosition((player.getPosition() + roll) % gameBoard.length());
-        gameBoard.getSquare(player.getPosition()).landOn(player);
+        player.setPosition((player.getPosition() + dieCup.getSum()) % gameBoard.length());
+        gameBoard.getSquare(player.getPosition()).landOn(currentPlayer);
         if(gameBoard.getSquare().getType() == "Amusement")
             pay(gameBoard.getSquare().getPrice);
     }
     public void takeTurn(){
-        input.nextLine();
-        die.roll();
-        updatePosition(die.eyes);
+        gui.showMessage("Roll Dice");
+        dieCup.rollDice();
+        updatePosition(dieCup.getSum());
         handleField(currentPlayer.getPosition());
     }
 
@@ -48,7 +78,7 @@ public class Matador {
     {
         if (currentPlayer.getPosition() + sum >= BOARD_SIZE) {
             currentPlayer.setPosition(currentPlayer.getPosition() + sum - BOARD_SIZE);
-            currentPlayer.getAccount().adjustBalance(gameBoard.getSquare(0).landOn());//give them pass start money
+            currentPlayer.getAccount().adjustBalance(gameBoard.getSquare(0).landOn(currentPlayer));//give them pass start money
         }
         else
             currentPlayer.setPosition(currentPlayer.getPosition() + sum);
@@ -69,10 +99,7 @@ public class Matador {
             currentPlayer.getAccount().setMoneyTotal(0);
         }
     }
-    private void changePlayer(){
-        int playerIndex = java.util.arrays = arList(players).indexOf(currentPlayer);
-        //we need to define, how to pass the turn to the other players
-    }
+    private void changePlayer(int i){currentPlayer =  players[i+1];}
 
     private void handleField(int position){
         String fieldType = new String (board.getSquare(position));
@@ -93,12 +120,14 @@ public class Matador {
                     }
 //this method is needed to terminate the game.
 public boolean paymentPossible(Player player, int amount){
-        if(player.getBalance() > amount)
-        return true;
+        if(player.getBalance() > amount){
+            return true;
+        }
         else{
         this.hasWinner = true;
         return false;
         }
+
         }
 public void announceWinner(){
 

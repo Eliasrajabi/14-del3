@@ -1,4 +1,3 @@
-import gui_fields.GUI_Player;
 import gui_main.GUI;
 import java.util.Arrays;
 
@@ -6,7 +5,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        GUI gui = new GUI();
+
+       GUI gui = new GUI();
 
         int playerNum = 0;
 
