@@ -1,7 +1,8 @@
  public class Player {
         public static Object move;
         public Account account = new Account();
-        int position = 0;
+
+     int position = 0;
         int startBalance;
 
         public void setStartBalance(int startBalance) {
