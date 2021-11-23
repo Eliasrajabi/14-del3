@@ -25,20 +25,4 @@ public class GUIController {
         squares[10] = new GUI_Street();
     }
 
-      /*  String choseAmusement = gui.getUserButtonPressed(
-                "Chose an Amusement",
-                "Button 1", "Button 2","Button 3","Button 4"
-        );
-        if(Objects.equals(choseAmusement, "Button 1")){
-            gameBoard.getSquare(3).landOn(player);}
-        if(Objects.equals(choseAmusement, "Button 2")){
-            gameBoard.getSquare(4).landOn(player);}
-        if(Objects.equals(choseAmusement, "Button 3")){
-            gameBoard.getSquare(5).landOn(player);}
-        if(Objects.equals(choseAmusement, "Button 4")){
-            gameBoard.getSquare(6).landOn(player);}
-
-    public String getUserButtonPressed(String click_a_button, String s, String s1, String s3, String s4) {
-        return null;
-    } */
 }

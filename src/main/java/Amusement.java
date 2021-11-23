@@ -21,9 +21,7 @@ public class amusement extends square{
         return colour;
     }
 
-    public void setBoothOwner(Player boothowner)
-    {
-        this.boothOwner=boothOwner;
+    public void setBoothOwner(Player boothowner) {
     }
     public Player getBoothOwner()
     {

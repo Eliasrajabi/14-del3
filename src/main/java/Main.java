@@ -17,14 +17,17 @@ public class Main {
         if(choice.equals("3")){playerNum = 3;}
         if(choice.equals("4")){playerNum = 4;}
 
-        GUI_Player[] players = new GUI_Player[playerNum];
+        Player[] players = new Player[playerNum];
         String[] playerNames = new String[playerNum];
 
+
         for(int i = 0; i < playerNum; i++){
+
+            players[i] =  new Player();
             String name = gui.getUserString(
                     "Name for player " + (i+1) + ": ");
-            players[i] =  new GUI_Player(name);
-            playerNames[i] = players[i].getName();
+            players[i].setPlayerName(name);
+            playerNames[i] = players[i].getPlayerName();
         }
 
 

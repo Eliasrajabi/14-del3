@@ -1,11 +1,13 @@
- public class Player {
+import java.util.Scanner;
+
+public class Player {
         public static Object move;
         public Account account = new Account();
-
-     int position = 0;
+        public String name;
+        int position = 0;
         int startBalance;
 
-        public void setStartBalance(int startBalance) {
+     public void setStartBalance(int startBalance) {
             this.startBalance = startBalance;
             account.adjustBalance(startBalance);
         }
@@ -25,4 +27,10 @@
         public Account getAccount() {
             return account;
         }
+
+        public void setPlayerName (String name){this.name = name;}
+
+        public String getPlayerName(){return this.name;}
+
     }
+

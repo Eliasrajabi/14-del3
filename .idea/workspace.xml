@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="078686c6-28dd-4902-b1d3-4b16c9b7efae" name="Changes" comment="Ændring af navn på test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="078686c6-28dd-4902-b1d3-4b16c9b7efae" name="Changes" comment="DieCupTest ind i GUIController">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amusement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amusement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MatadorGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +31,14 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="20e5JyRdq2QiqTqhKgY3bYEEs33" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -83,6 +95,19 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DieCupTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="CDIO-3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="CDIO-3" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -257,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637592446050</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="DieCupTest ind i GUIController">
+      <created>1637635132416</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1637635132417</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +334,8 @@
     <MESSAGE value="GUI" />
     <MESSAGE value="små ændringer" />
     <MESSAGE value="Valg af antal af spillere" />
-    <option name="LAST_COMMIT_MESSAGE" value="Valg af antal af spillere" />
+    <MESSAGE value="DieCupTest ind i GUIController" />
+    <option name="LAST_COMMIT_MESSAGE" value="DieCupTest ind i GUIController" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CDIO_3$Main.ic" NAME="Main Coverage Results" MODIFIED="1637258709431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
