@@ -5,8 +5,10 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Matador matador = new Matador();
+        matador.MatadorGame();
 
-       GUI gui = new GUI();
+      /* GUI gui = new GUI();
 
         int playerNum = 0;
 
@@ -31,7 +33,7 @@ public class Main {
         }
 
 
-        gui.showMessage(Arrays.toString(playerNames));
+        gui.showMessage(Arrays.toString(playerNames)); */
 
 
     }

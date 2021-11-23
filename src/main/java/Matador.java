@@ -6,37 +6,43 @@ public class Matador {
     private final DieCup dieCup = new DieCup(1);
     private final GameBoard gameBoard = new GameBoard();
     private Player currentPlayer;
-    int playerNum = 0;
+    private int playerNum = 0;
+
 
 
     private final int START_MONEY = 40;
     private final int BOARD_SIZE = gameBoard.length();
     private final boolean hasWinner = false;
 
+
     Player[] players = new Player[playerNum];
     String[] playerNames = new String[playerNum];
 
     GUI gui = new GUI();
 
-    final String choice = gui.getUserButtonPressed(
-            "Number of players", "1","2","3","4");
 
+
+
+    public void MatadorGame(){
+
+        final String choice = gui.getUserButtonPressed(
+                "Number of players", "1","2","3","4");
         if(choice.equals("1")){playerNum = 1;}
         if(choice.equals("2")){playerNum = 2;}
         if(choice.equals("3")){playerNum = 3;}
         if(choice.equals("4")){playerNum = 4;}
 
-
-    public void MatadorGame(){
         for(int i = 0; i < playerNum; i++){
 
             players[i] =  new Player();
+
             String name = gui.getUserString(
                     "Name for player " + (i+1) + ": ");
+
             players[i].setPlayerName(name);
+            players[i].setStartBalance(START_MONEY);
             playerNames[i] = players[i].getPlayerName();
 
-            players[i].setStartBalance(START_MONEY);
         }
 
 
@@ -104,13 +110,13 @@ public class Matador {
     private void handleField(int position){
         String fieldType = new String (board.getSquare(position));
         switch case "Amusement":
-        Amusement amusement = (amusement)(board.getSquare(position);
+        Amusement amusement = (Amusement)(board.getSquare(position);
         if ((amusement.getBoothOwner()== null )){
             pay(amusement.getPrice());
             board.getSquare(currentPlayer, position); // booth added to player inventory
         }
     }else(!currentPlayer.boothOwner){
-        pay(amusement.getBoothOwner, amusement.getPrice());
+        pay(Amusement.getBoothOwner, Amusement.getPrice());
     }
             break;
 }

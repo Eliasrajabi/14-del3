@@ -1,13 +1,14 @@
-public class amusement extends square{
+import java.io.IOException;
+public class Amusement extends Square{
     //fields
     private final String colour;
     private final int price;
-    private Player boothOwner = null; //nobody owns a booth, from the beginning of game.
+    private final Player boothOwner = null; //nobody owns a booth, from the beginning of game.
 
     //constructor - initializer
-    public amusement (String name, String colour, int position, int price)
+    public Amusement(String name, String colour, int position, int price)
     {
-        super(name,position)//inharented variables.
+        super(name,position);//inharented variables.
         this.colour = colour;
         this.price = price;
     }
@@ -26,5 +27,10 @@ public class amusement extends square{
     public Player getBoothOwner()
     {
         return boothOwner;
+    }
+
+    @Override
+    void landOn(Player player) throws IOException {
+
     }
 }
