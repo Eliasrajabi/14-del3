@@ -1,48 +1,55 @@
-import java.io.*;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Text {
 
-   private static String Descriptions(int squareNum) throws IOException {
+     private static String Descriptions(String squareName) throws IOException {
 
         File fil = new File("Descriptions");
 
         Scanner scan = new Scanner(new FileReader(fil.toString()));
 
-        String squareDesc = "";
-
-        String squareNumString = Integer.toString(squareNum);
+       String squareDesc = "";
 
         while(scan.hasNextLine()){
-            scan.nextLine();
 
-            if(scan.hasNext(squareNumString)){
+
+            if(scan.hasNext(squareName)){
                 scan.nextLine();
 
-                while(scan.hasNextLine()){
+                while(!scan.hasNext("---")){
                     squareDesc = String.format("%s%s\n", squareDesc, scan.nextLine());
-
-                    if(scan.hasNext(Integer.toString(squareNum+1))){
-                        break;
-                    }
                 }
 
                 break;
             }
-
+            scan.nextLine();
         }
 
         return squareDesc;
     }
 
-    public static String landOnGo() throws IOException {
-        return Descriptions(1);
+    public static String getGoDesc() throws IOException {
+        return Descriptions("GO:");
     }
-    public static String landOnAmusement() throws IOException {
-        return Descriptions(2);
+    public static String getAmusementDesc() throws IOException {
+       return Descriptions("Amusement:");
     }
-    public static String landOnChance() throws IOException {
-        return Descriptions(3);
+    public static String getChanceDesc(int chanceNr) throws IOException {
+
+         String chance = "";
+
+        switch (chanceNr) {
+            case 1 -> chance = Descriptions("Chance1:");
+            case 2 -> chance = Descriptions("Chance2:");
+            case 3 -> chance = Descriptions("Chance3:");
+            case 4 -> chance = Descriptions("Chance4:");
+        }
+
+        return chance;
     }
+
 
 }
