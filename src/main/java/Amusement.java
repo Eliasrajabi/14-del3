@@ -4,6 +4,7 @@ public class Amusement extends Square{
     private final String colour;
     private final String name;
     private final int price;
+
     private final Player boothOwner = null; //nobody owns a booth, from the beginning of game.
 
 

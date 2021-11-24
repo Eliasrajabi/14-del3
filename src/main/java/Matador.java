@@ -113,7 +113,7 @@ public class Matador {
             board.getSquare(currentPlayer, position); // booth added to player inventory
         }
     }else(!currentPlayer.boothOwner){
-        pay(Amusement.getBoothOwner, Amusement.);
+        pay(Amusement, Amusement.);
     }
             break;
 }

@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 public class GameBoard {
     //singleton
     //Gør så man har et enkelt instans af Gameboard klasse
@@ -20,7 +22,7 @@ public class GameBoard {
     }
     public Square setSquare(int number){return gameBoardList[number];}
     //et array som indeholder alle felter
-    public Square[] makeSquares() {
+    public Square[] makeSquares() throws IOException {
 
         //Indtil videre er der ikke noget indhold i de specifikke felter, men når det bliver lavet,
         //skriver vi dem ind i parameterne her for at instantiere dem.
@@ -42,7 +44,7 @@ public class GameBoard {
     public String toString() {
         StringBuilder builder = new StringBuilder();
         for(int i = 0; i < length(); i++){
-            builder.append(getSquare(i) + "\n");
+            builder.append(getSquare(i)).append("\n");
         }
         return builder.toString();
     }

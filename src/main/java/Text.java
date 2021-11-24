@@ -34,8 +34,21 @@ public class Text {
     public static String getGoDesc() throws IOException {
         return Descriptions("GO:");
     }
-    public static String getAmusementDesc() throws IOException {
-       return Descriptions("Amusement:");
+    public static String getAmusementDesc(int amusementNr) throws IOException {
+
+        String amusement = "";
+
+        switch (amusementNr) {
+            case 1 -> amusement = Descriptions("Amusement1:");
+            case 2 -> amusement = Descriptions("Amusement2:");
+            case 3 -> amusement = Descriptions("Amusement3:");
+            case 4 -> amusement = Descriptions("Amusement4:");
+            case 5 -> amusement = Descriptions("Amusement5:");
+            case 6 -> amusement = Descriptions("Amusement6:");
+        }
+
+        return amusement;
+
     }
     public static String getChanceDesc(int chanceNr) throws IOException {
 
