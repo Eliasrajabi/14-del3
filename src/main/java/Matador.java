@@ -1,14 +1,14 @@
 import gui_main.GUI;
-
 import java.io.IOException;
 
 public class Matador {
+
+    GUI gui = new GUI();
+
     private final DieCup dieCup = new DieCup(1);
     private final GameBoard gameBoard = new GameBoard();
     private Player currentPlayer;
     private int playerNum = 0;
-
-
 
     private final int START_MONEY = 40;
     private final int BOARD_SIZE = gameBoard.length();
@@ -17,8 +17,6 @@ public class Matador {
 
     Player[] players = new Player[playerNum];
     String[] playerNames = new String[playerNum];
-
-    GUI gui = new GUI();
 
 
 
@@ -35,7 +33,6 @@ public class Matador {
         for(int i = 0; i < playerNum; i++){
 
             players[i] =  new Player();
-
             String name = gui.getUserString(
                     "Name for player " + (i+1) + ": ");
 
