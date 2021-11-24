@@ -26,14 +26,14 @@ public class GameBoard {
         //skriver vi dem ind i parameterne her for at instantiere dem.
         gameBoardList[0] = new GO();
         gameBoardList[1] = new Chance();
-        gameBoardList[2] = new Amusement();
-        gameBoardList[3] = new Amusement();
+        gameBoardList[2] = new Amusement("","",20);
+        gameBoardList[3] = new Amusement("","",20);
         gameBoardList[4] = new Chance();
-        gameBoardList[5] = new Amusement();
-        gameBoardList[6] = new Amusement();
+        gameBoardList[5] = new Amusement("","",20);
+        gameBoardList[6] = new Amusement("","",20);
         gameBoardList[7] = new Chance();
-        gameBoardList[8] = new Amusement();
-        gameBoardList[9] = new Amusement();
+        gameBoardList[8] = new Amusement("","",20);
+        gameBoardList[9] = new Amusement("","",20);
         gameBoardList[10] = new Chance();
         return gameBoardList;
     }

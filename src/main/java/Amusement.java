@@ -8,7 +8,7 @@ public class Amusement extends Square{
 
 
     //constructor - initializer
-    public Amusement(String name, String colour, int position, int price)
+    public Amusement(String name, String colour, int price)
     {
         this.name = name;
         this.colour = colour;
