@@ -13,6 +13,7 @@ class DieCupTest {
         final int DIE_FACES = 6;
         final int TOLERANCE = 100;
         final float MAX_ROLLS = 10000;
+        DieCup dieCup = new DieCup(1);
 
         float[] expected = new float[DIE_FACES];
         Arrays.fill(expected, MAX_ROLLS/DIE_FACES);
@@ -23,7 +24,7 @@ class DieCupTest {
 
         while( rolls <= MAX_ROLLS ) {
 
-            int roll = DieCup.Roll();
+            int roll = dieCup.getSum();
 
             for (int i = 0; i < DIE_FACES; i++){
 

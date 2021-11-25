@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Player {
@@ -5,12 +6,6 @@ public class Player {
         public Account account = new Account();
         public String name;
         int position = 0;
-        int startBalance;
-
-     public void setStartBalance(int startBalance) {
-            this.startBalance = startBalance;
-            account.adjustBalance(startBalance);
-        }
 
         public void setPosition(int position) {
             this.position = position;
@@ -20,10 +15,6 @@ public class Player {
             return this.position;
         }
 
-        public void adjustBalance(int money) {
-            account.isBoothBought(money);
-        }
-
         public Account getAccount() {
             return account;
         }
@@ -31,6 +22,7 @@ public class Player {
         public void setPlayerName (String name){this.name = name;}
 
         public String getPlayerName(){return this.name;}
+
 
     }
 

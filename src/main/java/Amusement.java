@@ -1,11 +1,11 @@
 import java.io.IOException;
 public class Amusement extends Square{
     //fields
-    private final String colour;
-    private final String name;
-    private final int price;
+    private String colour;
+    private String name;
+    private int price;
 
-    private final Player boothOwner = null; //nobody owns a booth, from the beginning of game.
+    private Player boothOwner = null; //nobody owns a booth, from the beginning of game.
 
 
     //constructor - initializer
@@ -21,15 +21,22 @@ public class Amusement extends Square{
     public String getName(){return name;}
 
 
-    public void setBoothOwner(Player boothowner) {
+    public void setBoothOwner(Player player) {
+        boothOwner = player;
     }
     public Player getBoothOwner()
     {
         return boothOwner;
     }
 
-    @Override
-    void landOn(Player player) throws IOException {
 
+    @Override
+    public String toString() {
+        return "Amusement";
+    }
+
+    @Override
+    String getFieldType() {
+        return "Amusement";
     }
 }
