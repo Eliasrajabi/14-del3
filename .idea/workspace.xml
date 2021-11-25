@@ -4,31 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c159b6eb-cb03-403a-8489-da41c6145d9d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+    <list default="true" id="c159b6eb-cb03-403a-8489-da41c6145d9d" name="Changes" comment="Der er en masse ændringer til metoderne i Matador, så spillet virker. &#10;Al spille-logikken er rykket fra felterne ind i Matador. &#10;Der er nogle små ændringer til de andre klasser også.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CDIO-3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CDIO-3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amusement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amusement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DieCup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DieCup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUIController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Matador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Matador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DieCupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DieCupTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +117,7 @@
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.AccountTest.subtractionPoint" />
-        <item itemvalue="Application.Matador" />
+        <item itemvalue="Application.MatadorGame" />
         <item itemvalue="JUnit.DieCupTest" />
         <item itemvalue="JUnit.DieCupTest" />
       </list>
@@ -333,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637719961623</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Der er en masse ændringer til metoderne i Matador, så spillet virker. &#10;Al spille-logikken er rykket fra felterne ind i Matador. &#10;Der er nogle små ændringer til de andre klasser også.">
+      <created>1637866155602</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1637866155602</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +368,8 @@
     <MESSAGE value="GUI" />
     <MESSAGE value="Implementering af GUI" />
     <MESSAGE value="Sammensætning af kode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sammensætning af kode" />
+    <MESSAGE value="Der er en masse ændringer til metoderne i Matador, så spillet virker. &#10;Al spille-logikken er rykket fra felterne ind i Matador. &#10;Der er nogle små ændringer til de andre klasser også." />
+    <option name="LAST_COMMIT_MESSAGE" value="Der er en masse ændringer til metoderne i Matador, så spillet virker. &#10;Al spille-logikken er rykket fra felterne ind i Matador. &#10;Der er nogle små ændringer til de andre klasser også." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CDIO_3$Main.ic" NAME="Main Coverage Results" MODIFIED="1637258709431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

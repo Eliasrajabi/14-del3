@@ -28,10 +28,7 @@ public class Matador {
 
     private void initializePlayers() {
         final String choice = gui.getUserButtonPressed(
-                "Number of players", "1", "2", "3", "4");
-        if (choice.equals("1")) {
-            playerNum = 1;
-        }
+                "Number of players",  "2", "3", "4");
         if (choice.equals("2")) {
             playerNum = 2;
         }
@@ -65,7 +62,6 @@ public class Matador {
 
         } while (!hasWinner);
     }
-
 
     public void turn() throws IOException {
         System.out.println("\nPlayer " + currentPlayer.getPlayerName() + "'s turn");
@@ -140,7 +136,7 @@ public class Matador {
 
     private void handleChance() throws IOException{
         System.out.println("You landed on chance");
-        int cardNumber = (int) (Math.random() * 4 + 1);
+        int cardNumber = (int) (Math.random() * 5 + 1);
 
         switch (cardNumber) {
             case 1 -> {
@@ -206,5 +202,4 @@ public class Matador {
         System.out.println(winner.getPlayerName() + "HAS WON!!");
 
     }
-
 }

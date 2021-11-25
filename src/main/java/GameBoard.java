@@ -25,8 +25,6 @@ public class GameBoard {
     //et array som indeholder alle felter
     public static void makeSquares() throws IOException {
 
-        //Indtil videre er der ikke noget indhold i de specifikke felter, men når det bliver lavet,
-        //skriver vi dem ind i parameterne her for at instantiere dem.
         gameBoardList[0] = new GO();
         gameBoardList[1] = new Chance();
         gameBoardList[2] = new Amusement("Candy Floss","",1);
