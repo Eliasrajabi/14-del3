@@ -6,4 +6,10 @@ public class Chance extends Square{
     String getFieldType() {
         return "Chance";
     }
+
+    @Override
+    public String toString() {
+        return "Chance";
+    }
 }
+

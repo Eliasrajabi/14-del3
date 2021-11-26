@@ -2,9 +2,9 @@ import gui_fields.GUI_Player;
 
 public class Player {
         public Account account = new Account();
-        public String name;
+        private String name;
         public GUI_Player GUIplayer;
-        int position = 0;
+        private int position = 0;
 
         public void setPosition(int position) {
             this.position = position;
