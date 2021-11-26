@@ -1,11 +1,12 @@
-import java.util.ArrayList;
-import java.util.Scanner;
+import gui_fields.GUI_Player;
 
 public class Player {
         public static Object move;
         public Account account = new Account();
         public String name;
-        int position = 0;
+        public GUI_Player GUIplayer;
+
+    int position = 0;
 
         public void setPosition(int position) {
             this.position = position;

@@ -1,9 +1,11 @@
+import gui_codebehind.GUI_FieldFactory;
 import gui_main.GUI;
 import java.io.IOException;
 
 public class Matador {
-
     GUI gui = new GUI();
+    GUIController guiController = new GUIController();
+
 
     private final DieCup dieCup = new DieCup(1);
     private final GameBoard gameBoard = GameBoard.getInstance();
@@ -49,7 +51,7 @@ public class Matador {
 
             players[i].setPlayerName(name);
             playerNames[i] = players[i].getPlayerName();
-
+            GUIController.addGUIPlayer(players[i]);
         }
     }
 
@@ -65,8 +67,10 @@ public class Matador {
 
     public void turn() throws IOException {
         System.out.println("\nPlayer " + currentPlayer.getPlayerName() + "'s turn");
-        gui.showMessage("Roll Dice");
-        dieCup.rollDice();
+        //gui.showMessage("Roll Dice");
+        //dieCup.rollDice();
+        guiController.GUIDie(dieCup);
+
         System.out.println("You rolled a " + dieCup.getSum());
         updatePosition(dieCup.getSum());
         handleField(currentPlayer);
