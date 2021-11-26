@@ -1,32 +1,31 @@
-import junit.framework.TestCase;
-import org.junit.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
-public class AccountTest extends TestCase {
-    private Player spiller;
+public class AccountTest {
+    private final Player player = new Player();
     @BeforeEach
     protected void setUp() {
-        spiller = new Player();
-        spiller.account.adjustMoney(50);
+        player.account.setMoneyTotal(50);
     }
 
     @AfterEach
     protected void tearDown(){
-        spiller.account.moneyTotal = 0;
+        player.account.setMoneyTotal(0);
     }
 
     @Test
     void addPoint(){
-        assertEquals(spiller.getAccount().adjustMoney(50),spiller.account.moneyTotal == 100);
+        assertEquals(100, player.getAccount().adjustBalance(50));
     }
-
 
     @Test
     void subtractionPoint() {
-        boolean isMoneyAdjusted = spiller.getAccount().isBoothBought(-100);
+        boolean isMoneyAdjusted = player.getAccount().adjustBalance(-100) < 0;
         assertFalse(isMoneyAdjusted);
-        int totalMoney = spiller.getAccount().moneyTotal;
-        assertEquals(totalMoney,50);
+        int totalMoney = player.getAccount().getMoneyTotal();
+        assertEquals(totalMoney,0);
     }
 }

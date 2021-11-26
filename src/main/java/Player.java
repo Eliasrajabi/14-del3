@@ -1,27 +1,26 @@
- public class Player {
-        public static Object move;
+import gui_fields.GUI_Player;
+
+public class Player {
         public Account account = new Account();
-        int position = 0;
-        int startBalance;
-
-        public void setStartBalance(int startBalance) {
-            this.startBalance = startBalance;
-            account.isBoothBought(startBalance);
-        }
-
-        public Player() {
-
-        }
+        private String name;
+        public GUI_Player GUIplayer;
+        private int position = 0;
 
         public void setPosition(int position) {
             this.position = position;
         }
 
-        public void adjustBalance(int money) {
-            account.isBoothBought(money);
+        public int getPosition(){
+            return this.position;
         }
 
         public Account getAccount() {
             return account;
         }
+        public void setPlayerName (String name){this.name = name;}
+
+        public String getPlayerName(){return this.name;}
+
+
     }
+
