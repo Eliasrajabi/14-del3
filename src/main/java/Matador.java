@@ -3,9 +3,8 @@ import gui_main.GUI;
 import java.io.IOException;
 
 public class Matador {
-    GUI gui = new GUI();
-    GUIController guiController = new GUIController();
 
+    GUI gui = new GUI();
 
     private final DieCup dieCup = new DieCup(1);
     private final GameBoard gameBoard = GameBoard.getInstance();
@@ -51,7 +50,6 @@ public class Matador {
 
             players[i].setPlayerName(name);
             playerNames[i] = players[i].getPlayerName();
-            GUIController.addGUIPlayer(players[i]);
         }
     }
 
@@ -66,18 +64,17 @@ public class Matador {
     }
 
     public void turn() throws IOException {
-        System.out.println("\nPlayer " + currentPlayer.getPlayerName() + "'s turn");
-        //gui.showMessage("Roll Dice");
-        //dieCup.rollDice();
-        guiController.GUIDie(dieCup);
+        gui.showMessage("Player " + currentPlayer.getPlayerName() + "'s turn");
+        gui.showMessage("Roll Dice");
+        dieCup.rollDice();
 
-        System.out.println("You rolled a " + dieCup.getSum());
+        gui.showMessage("You rolled a " + dieCup.getSum());
         updatePosition(dieCup.getSum());
         handleField(currentPlayer);
 
     }
 
-    private void updatePosition(int sum) throws IOException {
+    private void updatePosition(int sum) {
 
         if (currentPlayer.getPosition() + sum >= BOARD_SIZE) {
             currentPlayer.setPosition(currentPlayer.getPosition() + sum - BOARD_SIZE);
@@ -90,16 +87,10 @@ public class Matador {
     private void handleField(Player player) throws IOException {
         String fieldType = gameBoard.getSquare(player.getPosition()).getFieldType();
         switch (fieldType) {
-            case "Amusement":
-                handleAmusement();
-                break;
-
-            case "Chance":
-                handleChance();
-                break;
-
-            default:
-                break;
+            case "Amusement" -> handleAmusement();
+            case "Chance" -> handleChance();
+            default -> {
+            }
         }
 
     }
@@ -107,9 +98,9 @@ public class Matador {
     private void payPlayer(Player owner, int price){
         currentPlayer.account.adjustBalance(-price);
         owner.account.adjustBalance(price);
-        System.out.println("You landed on an amusement, where you have to pay entrance.");
-        System.out.println("You paid " + price + "$ to " + owner.getPlayerName());
-        System.out.println("You now have " + currentPlayer.account.getMoneyTotal() + "$");
+        gui.showMessage("You landed on an amusement, where you have to pay entrance.");
+        gui.showMessage("You paid " + price + "$ to " + owner.getPlayerName());
+        gui.showMessage("You now have " + currentPlayer.account.getMoneyTotal() + "$");
         if (isGameOver()){
             endGame();
         }
@@ -119,11 +110,11 @@ public class Matador {
         if(currentPlayer.account.getMoneyTotal() > field.getPrice()) {
             currentPlayer.account.adjustBalance(-field.getPrice());
             field.setBoothOwner(currentPlayer);
-            System.out.println("You landed on " + field.getName());
-            System.out.println("You bought a booth here");
+            gui.showMessage("You landed on " + field.getName());
+            gui.showMessage("You bought a booth here");
         }
         else{
-            System.out.println("You can't afford a booth here :'(");
+            gui.showMessage("You can't afford a booth here :'(");
         }
     }
     private void handleAmusement(){
@@ -131,7 +122,7 @@ public class Matador {
         Amusement amusement = (Amusement) field;
         if (amusement.getBoothOwner() == null) {
             buyField(amusement);
-            System.out.println("You now have " + currentPlayer.account.getMoneyTotal() + "$");
+            gui.showMessage("You now have " + currentPlayer.account.getMoneyTotal() + "$");
         } else {
             payPlayer(amusement.getBoothOwner(), amusement.getPrice());
         }
@@ -139,36 +130,35 @@ public class Matador {
     }
 
     private void handleChance() throws IOException{
-        System.out.println("You landed on chance");
+        gui.showMessage("You landed on chance");
         int cardNumber = (int) (Math.random() * 5 + 1);
 
         switch (cardNumber) {
             case 1 -> {
-                System.out.println("Move to Magic Show");
+                gui.showMessage("Move to Magic Show");
                 currentPlayer.setPosition(5);
                 handleField(currentPlayer);
             }
             case 2 -> {
-                System.out.println(Text.getChanceDesc(cardNumber));
+                gui.showMessage(Text.getChanceDesc(cardNumber));
                 currentPlayer.account.adjustBalance(-2);
-                System.out.println("You now have " + currentPlayer.account.getMoneyTotal() + "$");
+                gui.showMessage("You now have " + currentPlayer.account.getMoneyTotal() + "$");
                 if (isGameOver()){
                     endGame();
                 }
             }
             case 3 -> {
-                System.out.println();
-                System.out.println("Move to GO");
+                gui.showMessage("Move to GO");
                 currentPlayer.setPosition(0);
                 handleGO();
             }
             case 4 -> {
-                System.out.println(Text.getChanceDesc(cardNumber));
+                gui.showMessage(Text.getChanceDesc(cardNumber));
                 currentPlayer.account.adjustBalance(2);
-                System.out.println("You now have " + currentPlayer.account.getMoneyTotal() + "$");
+                gui.showMessage("You now have " + currentPlayer.account.getMoneyTotal() + "$");
             }
             case 5 -> {
-                System.out.println("Move to Video Arcade");
+                gui.showMessage("Move to Video Arcade");
                 currentPlayer.setPosition(8);
                 handleField(currentPlayer);
             }
@@ -176,14 +166,14 @@ public class Matador {
         }
 
     }
-    private void handleGO() throws IOException {
+    private void handleGO(){
         if (currentPlayer.getPosition() == 0) {
             currentPlayer.account.adjustBalance(2);
-            System.out.println("You landed on GO! You get 2$");
+            gui.showMessage("You landed on GO! You get 2$");
         }
         else {
             currentPlayer.account.adjustBalance(2);
-            System.out.println("You passed GO! You get 2$");
+            gui.showMessage("You passed GO! You get 2$");
         }
     }
     private boolean isGameOver (){
@@ -192,7 +182,7 @@ public class Matador {
 
     private void endGame(){
         hasWinner = true;
-        System.out.println("A player has lost all their money :( \nThe game is over!");
+        gui.showMessage("A player has lost all their money :( \nThe game is over!");
         printWinner();
     }
 
@@ -203,7 +193,7 @@ public class Matador {
                 winner = player;
             }
         }
-        System.out.println(winner.getPlayerName() + "HAS WON!!");
+        gui.showMessage(winner.getPlayerName() + "HAS WON!!");
 
     }
 }

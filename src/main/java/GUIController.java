@@ -23,7 +23,7 @@ public class GUIController {
     static GUI gui;
 
     public GUIController() {
-        GUI_BoardController(squares[i]);
+       // GUI_BoardController(squares[i]);
         makeGUIFields();
     }
 
